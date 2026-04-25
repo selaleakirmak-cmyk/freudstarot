@@ -1,4 +1,4 @@
-import { cards } from "@/lib/data";
+import { cards } from "../../lib/data";
 
 export default function DeckPage() {
   return (
