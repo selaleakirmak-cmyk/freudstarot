@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f1e8dc;
+  --ink: #171210;
+  --plum: #5f4959;
+  --surface: #e8ddd3;
+}
+
+html {
+  background: var(--bg);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100svh;
+  margin: 0;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(95, 73, 89, 0.12), transparent 32%),
+    linear-gradient(180deg, #f4ecdf, #eadfd5);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.03em;
+}
+
+button, a, textarea {
+  -webkit-tap-highlight-color: rgba(95, 73, 89, 0.14);
+}
+
+.card-surface {
+  background: radial-gradient(circle at top, rgba(255,255,255,.36), transparent 55%), linear-gradient(180deg, #e8ddd3, #dcccc4);
+  border: 1px solid rgba(23,18,16,.14);
+  box-shadow: 0 20px 52px rgba(0,0,0,.08);
+}
+
+.bottom-safe {
+  padding-bottom: max(.75rem, env(safe-area-inset-bottom));
+}
+
+.top-safe {
+  padding-top: env(safe-area-inset-top);
+}
